@@ -77,13 +77,9 @@ PRODUCT_COPY_FILES += \
 # Common init scripts
 PRODUCT_PACKAGES += \
     init.qcom.rc \
-    init.recovery.qcom.rc \
-    dt2w.rc
-    
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/bin/init.dt2w.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/init.dt2w.sh
-    
+    init.recovery.qcom.rc 
 
+    
 # Device-specific settings
 PRODUCT_PACKAGES += \
     XiaomiParts
