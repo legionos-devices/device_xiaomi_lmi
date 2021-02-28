@@ -176,7 +176,9 @@ PRODUCT_PACKAGES += \
     FrameworksResCommon \
     FrameworksResTarget 
 
-
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
 
 # Permissions
 PRODUCT_COPY_FILES += \
