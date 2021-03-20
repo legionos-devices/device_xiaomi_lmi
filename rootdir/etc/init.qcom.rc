@@ -2,8 +2,10 @@ on early-init
     write /sys/fs/selinux/enforce 0
     
 on boot
-    chown system system /sys/class/power_supply/battery/input_suspend
-    chmod 0666 /sys/class/power_supply/battery/input_suspend
+       chown system system /sys/class/power_supply/battery/charging_enabled
+       chmod 0666 /sys/class/power_supply/battery/charging_enabled
+       chown system system /sys/class/power_supply/battery/input_suspend
+       chmod 0666 /sys/class/power_supply/battery/input_suspend
 
 on post-fs-data
     mount none dev/null /vendor/lib/soundfx/libvolumelistener.so bind

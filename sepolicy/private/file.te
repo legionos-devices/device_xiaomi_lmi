@@ -21,3 +21,7 @@ type sysfs_kgsl, sysfs_type, fs_type;
 # socket
 type pps_socket, file_type;
 
+#vendor_sysfs
+type vendor_sysfs_battery_supply, sysfs_type, fs_type;
+type vendor_sysfs_usb_supply, sysfs_type, fs_type;
+type vendor_sysfs_usbpd_device, sysfs_type, fs_type;

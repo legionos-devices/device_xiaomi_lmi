@@ -1,2 +1,3 @@
 type batteryd, domain;
 allow batteryd kmsg_device:chr_file { getattr };
+allow batteryd self:capability dac_override;

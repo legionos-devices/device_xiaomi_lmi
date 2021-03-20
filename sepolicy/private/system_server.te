@@ -1,1 +1,6 @@
 allow system_server sysfs :file {read open getattr};
+
+# Smart charging
+allow system_server vendor_sysfs_battery_supply:file { getattr open read write };
+allow system_server vendor_sysfs_battery_supply:file write;
+allow system_server vendor_sysfs_battery_supply:file open;
